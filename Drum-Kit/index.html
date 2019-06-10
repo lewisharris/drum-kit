@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Clock</title>
+	<title>Drum Kit</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-	<span id="toptext">Drum Kit</span>
-	<p>use keypad to control pads</p>
+	<h1 id="toptext">Drum Kit</h1>
+	<p>use your keypad to control pads</p>
 </header>
-<div id="container">
-	<div class="boxes">
-		<div id="box-one" class="box">
-			<h2 class="buttontext">Kick</h2>
-			<p class="buttonletter">A</p>
-			<audio data-key='65' src="audio/kick.wav" id="kick"></audio>
+	<div id="container">
+		<div class="boxes">
+		<!-- DATA KEYS REFERENCE THE KEYS PRESSED ON THE KEY PAD -->
+			<div class="box" data-key="65">		
+				<h2 class="buttontext">A</h2>
+				<p class="buttonletter">Kick</p>
+			</div>
+			<div class="box" data-key="83">
+				<h2 class="buttontext">S</h2>
+				<p class="buttonletter">Snare</p>
+			</div>
+			<div class="box" data-key="68">
+				<h2 class="buttontext">D</h2>
+				<p class="buttonletter">Rim</p>
+			</div>
 		</div>
-		<div id="box-two" class="box">
-			<h2 class="buttontext">Snare</h2>
-			<p class="buttonletter">S</p>
-			<audio src="audio/snare.wav" id="snare"></audio>
+
+		<div class="boxes">
+			<div class="box" data-key="70">
+				<h2 class="buttontext">F</h2>
+				<p class="buttonletter">Clap</p>
+			</div>
+			<div class="box" data-key="71">
+				<h2 class="buttontext">G</h2>
+				<p class="buttonletter">Hi Hat</p>
+			</div>
+			<div class="box" data-key="72">
+				<h2 class="buttontext">H</h2>
+				<p class="buttonletter">Cls Hat</p>
+			</div>
 		</div>
-		<div id="box-three" class="box">
-			<h2 class="buttontext">Rim</h2>
-			<p class="buttonletter">D</p>
-			<audio src="audio/rim.wav" id="rim"></audio>
-		</div>
-	</div>
-	<div class="boxes">
-		<div id="box-four" class="box">
-			<h2 class="buttontext">Clap</h2>
-			<p class="buttonletter">F</p>
-			<audio src="audio/clap.wav" id="clap"></audio>
-		</div>
-		<div id="box-five" class="box">
-			<h2 class="buttontext">Hi Hat</h2>
-			<p class="buttonletter">G</p>
-			<audio src="audio/hi-hat.wav" id="hi-hat"></audio>
-		</div>
-		<div id="box-six" class="box">
-			<h2 class="buttontext">Cls Hat</h2>
-			<p class="buttonletter">H</p>
-			<audio src="audio/cls-hat.wav" id="cls-hat"></audio>
-		</div>
-	</div>
-	<div class="boxes">
-		<div id="box-seven" class="box">
-			<h2 class="buttontext">Tom</h2>
-			<p class="buttonletter">J</p>
-			<audio src="audio/tom.wav" id="tom"></audio>
-		</div>
-		<div id="box-eight" class="box">
-			<h2 class="buttontext">Crash</h2>
-			<p class="buttonletter">K</p>
-			<audio src="#" id="crash"></audio>
-		</div>
-		<div id="box-eight" class="box">
-			<h2 class="buttontext">Ride</h2>
-			<p class="buttonletter">L</p>
-			<audio src="#" id="ride"></audio>
+
+		<div class="boxes">
+			<div class="box" data-key="74">
+				<h2 class="buttontext">J</h2>
+				<p class="buttonletter">Tom</p>
+			</div>
+			<div class="box" data-key="75">
+				<h2 class="buttontext">K</h2>
+				<p class="buttonletter">Crash</p>
+			</div>
+			<div class="box" data-key="76">
+				<h2 class="buttontext">L</h2>
+				<p class="buttonletter">Ride</p>
+			</div>
 		</div>
 	</div>
 
+<!-- AUDIO FILES REFERENCED HERE, THE DATA KEYS HERE REFERENCE THE DATA KEYS IN THE ABOVE DIVS-->
 
-	
-	</div>
-
-
-</div>
-
+<audio data-key="65" src="audio/kick.wav" id="kick"></audio>
+<audio data-key="83" src="audio/snare.wav" id="snare"></audio>
+<audio data-key="68" src="audio/rim.wav" id="rim"></audio>
+<audio data-key="70" src="audio/clap.wav" id="clap"></audio>
+<audio data-key="71" src="audio/hi-hat.wav" id="hi-hat"></audio>
+<audio data-key="72" src="audio/cls-hat.wav" id="cls-hat"></audio>
+<audio data-key="74" src="audio/tom.wav" id="tom"></audio>
+<audio data-key="75" src="audio/crash.wav" id="crash"></audio>
+<audio data-key="76" src="audio/ride.wav" id="ride"></audio>
 
 
 <script type="text/javascript" src="main.js"></script>
+
 </body>
 </html>
