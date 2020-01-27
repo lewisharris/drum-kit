@@ -31,7 +31,6 @@ window.addEventListener('keydown', music);  // This listens for any key down in 
 
 - Const audio looks through all 'audio' elements in my HTML using querySelector
  and finds the one thats data key attribute matches the keycode entered.
- FIND OUT IN DETAIL HOW THE SYNTAX IN THIS LINE WORKS 
 
  - The If statement then checks if there is any audio or not and if there is no audio it returns (ends the function)
  as it is not needed.
