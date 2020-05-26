@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Ramabhadra');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+html,body{
+font-family:helvetica,arial, sans-serif;
+margin:auto 0;
+background-image: url('images/background.jpg');
+max-width:100%;
+max-height:500px;
+box-sizing:border-box;
+}
+
+header{
+	height:90px;
+	width:100%;
+	border-bottom: 2px solid #E6F3F7;
+	background:rgba(1,1,1,0.15);
+	color: #fff;
+	font-family: helvetica,arial, sans-serif;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	font-size: 10px;
+	text-align: center;
+	margin:auto 0;
+	line-height: 0.8;
+	padding-top:30px;
+}
+#toptext{
+	color: #fff;
+	font-family: 'Pacifico', cursive;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	font-size: 36px;
+	text-align: center;
+	margin:auto 0;
+	opacity: 1;
+}
+
+
+#container{
+	width:100%;
+	margin:auto 0;
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+#boxes{
+	width:100%;
+	margin:auto 0;
+	display: inline-flex;
+	flex-direction: row;
+	box-sizing:border-box;
+}
+.box{
+	text-align: center;
+	color:#fff;
+	margin:10px;
+	padding:10px;
+	width:90px;
+	height:90px;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 2px;
+	border-color: #E6F3F7;
+	border-width: 2px; 
+	border-style: solid;
+	background:rgba(1,1,1,0.3);
+	transition: all 0.5s;
+
+}
+
+.current{
+	background:rgba(1,1,1,0.5);
+	border-color:#FCFFB4;
+	border-width: 2px;
+	box-shadow:0 0 5px #FCFFB4;
+	transition: all 0.08s;
+
+}
+
+.buttontext{
+	position: relative;
+	top:0px;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+.buttonletter{
+	color:#08C2CE;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+@media only screen and (768px){
+ 	body{
+ 		display:none;
+ 	}
+}
+
+
+
+
